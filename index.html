@@ -287,19 +287,27 @@ transform: translateX(24px);
 <a href="index2.html#privacy-policy" class="text-white text-xl hover:text-primary transition-colors">Privacy Policy</a>
 </div>
 </div>
-<!-- Hero Section -->
-<section class="hero-section h-screen flex items-center relative">
-<div class="hero-overlay absolute inset-0 z-0"></div>
-<div class="container mx-auto px-6 z-10 relative">
-<div class="w-full md:w-2/3 lg:w-1/2">
+<!-- HERO SECTION -->
+<section class="hero-section relative w-full overflow-hidden">
+  <div class="hero-overlay absolute inset-0 z-0"></div>
+
+  <!-- IMAGE -->
+  <img 
+    src="./images/landingpg.png" 
+    alt="Landing Image"
+    class="w-full h-auto md:h-screen object-cover"
+  >
+
+  <!-- OVERLAY (optional) -->
+  <div class="absolute inset-0 bg-black/30 pointer-events-none"></div>
+
+  <!-- BUTTON + SCROLL -->
+  <div class="absolute bottom-4 md:bottom-6 left-1/2 transform -translate-x-1/2 z-10 flex flex-col items-center w-full px-6 md:px-0">
+  <a href="#portfolio" class="w-full md:w-auto text-sm md:text-base px-3 py-2 md:px-4 md:py-2 bg-primary text-white rounded-button shadow-lg text-center mb-1">
+    Explore Our Products
+  </a>
 </div>
-</div>
-<!-- Bottom Center Button -->
-<div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10">
-<a href="#portfolio" class="inline-block px-6 py-2 bg-primary text-white font-medium rounded-button hover:bg-opacity-90 transition-all shadow-lg whitespace-nowrap">
-Explore Our Products
-</a>
-</div>
+
 </section>
 <!-- Design Showcase -->
 <section id="portfolio" class="py-20 bg-white">
